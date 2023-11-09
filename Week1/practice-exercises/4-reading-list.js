@@ -9,3 +9,32 @@
  *  If you haven't read it log a string like You still need to read "The Lord of the Rings"
  */
 
+const listOfBooks = [
+  {
+    Title: 'The magic Border', 
+    Author: 'Arlo Parks', 
+    alreadyRead: true,
+  },
+
+  {
+    Title: 'Words of a Goat Princess', 
+    Author: 'Jessie Reyez', 
+    alreadyRead: false,
+  },
+
+  {
+    Title: 'A Polyamory Devotional', 
+    Author: 'Evita Lavitaloca Sawyers', 
+    alreadyRead: false,
+  }
+];
+
+listOfBooks.forEach(i => {
+  console.log(`${i.Title} by ${i.Author}`);
+
+  if (i.alreadyRead === true) {
+    console.log(`You already read "${i.Title}"`);
+  } else {
+    console.log(`You still need to read "${i.Title}"`);
+  }
+})

@@ -12,3 +12,13 @@
  *   Ingredients: 4 eggs, 2 strips of bacon, 1 tsp salt/pepper
  */
 
+const myMealRecipe = {
+    Meal: 'quesadillas', 
+    Serves: 2, 
+    Ingredients: ['2 tortillas', ' 1 bag of cheese', ' 1 onion', ' chicken']
+  };
+
+  for (property in myMealRecipe) {
+    // console.log(`${property}: ${myMealRecipe[property]}`);
+    console.log(property + ": " + myMealRecipe[property]);
+  }
